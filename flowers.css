@@ -1,0 +1,65 @@
+/* Decorative cutouts use the original flower sheet and an individual SVG silhouette. */
+html body::before,
+html body::after { display: none; }
+
+.bloom {
+  --bloom-width: clamp(66px, 16vw, 108px);
+  --bloom-gutter: clamp(18px, 8%, 52px);
+  --bloom-tilt: 9deg;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  block-size: clamp(43px, 12vw, 69px);
+  padding-inline: var(--bloom-gutter);
+  pointer-events: none;
+}
+
+.bloom svg {
+  display: block;
+  flex: 0 0 var(--bloom-width);
+  inline-size: var(--bloom-width);
+  max-inline-size: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 5px 5px #21384d4d);
+  transform: rotate(var(--bloom-tilt));
+  transform-origin: 50% 76%;
+}
+
+.bloom-blue {
+  --bloom-width: clamp(50px, 13vw, 83px);
+  --bloom-tilt: -16deg;
+  justify-content: flex-start;
+}
+
+.bloom-lily {
+  --bloom-width: clamp(78px, 19vw, 135px);
+  --bloom-tilt: 14deg;
+}
+
+.bloom-pansy {
+  --bloom-width: clamp(56px, 14vw, 86px);
+  --bloom-tilt: -13deg;
+  justify-content: flex-start;
+}
+
+.bloom-azure {
+  --bloom-width: clamp(61px, 15vw, 96px);
+  --bloom-tilt: 12deg;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .bloom { view-timeline-name: --bloom-entrance; }
+    .bloom svg {
+      animation: bloom-grow linear both;
+      animation-timeline: --bloom-entrance;
+      animation-range: entry 15% cover 28%;
+    }
+  }
+}
+
+@keyframes bloom-grow {
+  0% { opacity: 0; transform: translateY(12px) rotate(calc(var(--bloom-tilt) - 18deg)) scale(.25); }
+  72% { opacity: 1; }
+  100% { opacity: 1; transform: rotate(var(--bloom-tilt)) scale(1); }
+}

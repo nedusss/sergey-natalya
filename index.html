@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сергей и Наталья</title>
+<link rel="preload" as="font" href="fonts/Lora.ttf" type="font/ttf" crossorigin>
+<link rel="preload" as="font" href="fonts/Raleway.ttf" type="font/ttf" crossorigin>
+<link rel="preload" as="font" href="fonts/MarckScript.ttf" type="font/ttf" crossorigin>
+
+<link rel="preload" as="image" href="img/envelope-full.webp">
+<link rel="preload" as="image" href="img/sergey-kneeling.png">
+<link rel="preload" as="image" href="img/natalya-child.png">
+<link rel="stylesheet" href="style.css?v=hinged-envelope">
+<link rel="stylesheet" href="flowers.css?v=1">
+<link rel="stylesheet" href="stationery.css?v=hinged-envelope">
+<link rel="stylesheet" href="rsvp-card.css?v=snow-card">
+<link rel="stylesheet" href="typography-new.css?v=14">
+<link rel="stylesheet" href="fonts/local.css">
+<noscript>
+<style>.intro{display:none}</style>
+</noscript>
+</head>
+<body>
+<svg width="0" height="0" class="flap-shape" aria-hidden="true">
+<defs>
+  <filter id="flower-cutout" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -5 0 0 0 4.65" result="flower-alpha"/>
+    <feComposite in="SourceGraphic" in2="flower-alpha" operator="in"/>
+  </filter>
+</defs>
+</svg>
+<section class="intro" id="intro" aria-labelledby="intro-title" hidden>
+  <div class="intro-label">
+<h1 id="intro-title"><span>ВАМ ПРИШЛО</span><strong>Приглашение</strong></h1>
+</div>
+  <button class="envelope" id="open" aria-label="Открыть приглашение">
+    <span class="envelope-art" aria-hidden="true">
+      <span class="envelope-shell"></span>
+      <span class="pocket"></span>
+      <span class="flap">
+        <span class="flap-face"></span>
+        <span class="flap-lining"></span>
+      </span>
+      <span class="closed-art"></span>
+    </span>
+  </button>
+  <p class="hint">НАЖМИТЕ,<br>ЧТОБЫ ОТКРЫТЬ</p>
+</section>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-card paper">
+    <div class="hero-line" aria-hidden="true"><svg viewBox="0 0 600 65" preserveAspectRatio="none"><path class="hero-line-path" d="M0 18 C110 4 225 58 300 42 C375 58 490 4 600 18"/><path class="hero-line-heart" d="M300 59 C292 51 279 43 279 32 C279 20 292 17 300 27 C308 17 321 20 321 32 C321 43 308 51 300 59Z"/></svg></div>
+    <div class="hero-heading">
+      <h2 id="hero-title" tabindex="-1">МЫ ЖЕНИМСЯ</h2>
+      <div class="hero-dialogue"><p class="childhood-reply">— я буду!</p><p class="childhood-thought">— интересно, кто будет моим<br> мужем, когда я вырасту?</p></div>
+    </div>
+    <div class="childhood">
+      <img class="child child-sergey" src="img/sergey-kneeling.png" width="1086" height="1448" alt="Сергей в детстве стоит на колене с кольцом">
+      <img class="child child-natalya" src="img/natalya-child.png" width="1086" height="1448" alt="Наталья в детстве в платье и короне">
+    </div>
+    <a class="hero-ribbon" href="#welcome" aria-label="Вы приглашены — перейти к приглашению">
+      <span class="ribbon-track" aria-hidden="true"><span class="ribbon-group"><span>вы приглашены</span><span>вы приглашены</span><span>вы приглашены</span><span>вы приглашены</span><span>вы приглашены</span></span><span class="ribbon-group"><span>вы приглашены</span><span>вы приглашены</span><span>вы приглашены</span><span>вы приглашены</span><span>вы приглашены</span></span></span>
+    </a>
+  </div>
+</section>
+<section class="nameplate">
+  <svg class="nameplate-art" viewBox="21 214 1051 824" role="img" aria-label="Сергей и Наталья. 27 февраля 2027">
+    <defs>
+      <clipPath id="nameplate-edge">
+        <path d="M31 437C54 440 82 395 165 382L179 380C170 367 153 351 145 348Q136 344 145 337Q151 329 158 342L187 375L200 371C191 357 187 341 180 339Q174 335 182 328Q190 322 195 329L191 338L209 364L222 363Q219 349 218 335Q204 337 209 328L212 321Q207 313 212 309Q221 306 225 315Q228 302 235 306Q241 308 237 316Q233 326 244 326Q254 332 253 342L246 346L243 350
+        C221 337 221 306 230 278C232 258 236 241 252 234C266 228 285 233 304 226C318 221 329 236 333 246Q334 257 314 261
+        C320 276 331 289 338 304Q353 328 347 352L342 374C358 346 385 326 412 318C449 307 491 311 514 333Q525 342 526 358
+        C514 355 506 351 494 355C462 361 440 397 431 419C504 425 576 445 609 414L618 404L629 414C655 445 783 420 848 415C922 408 971 457 979 519C984 551 974 552 1002 579C1046 617 1064 664 1059 719C1055 770 1025 820 993 846C970 867 983 899 967 942C946 997 903 1021 843 1015C752 1005 650 981 613 1024L609 1027L602 1020C562 981 462 1007 370 1015C318 1020 276 1003 254 965C231 928 240 901 232 875C229 864 217 851 205 839C169 800 154 757 159 708C161 678 175 648 192 626L201 612C169 627 144 645 123 657C111 667 103 681 101 693C77 684 62 665 63 646C65 600 106 557 135 537L170 518C145 517 134 506 126 492C112 491 103 490 93 482C67 470 47 461 37 451Z"/>
+      </clipPath>
+    </defs>
+    <image href="img/lily-nameplate.webp" width="1169" height="1280" clip-path="url(#nameplate-edge)"/>
+  </svg>
+</section>
+
+<section class="section" id="welcome">
+
+<h2>Дорогие гости!</h2>
+<p>Мы будем счастливы разделить с вами радость особенного для нас дня — дня нашей свадьбы.</p>
+<p>Приглашаем вас стать частью этого тёплого и незабываемого события.</p>
+</section>
+<div class="bloom bloom-iris" aria-hidden="true">
+  <svg viewBox="7 33 223 208" focusable="false">
+    <clipPath id="bloom-iris-edge">
+      <path d="M75 103 78 98 84 94 84 92 80 91 80 83 87 80 85 76 85 69 89 64 91 64 92 54 95 48 95 42 97 40 111 43 113 47 115 46 117 48 117 50 119 50 118 41 122 39 130 41 135 50 141 50 142 45 152 50 159 47 161 44 175 44 177 49 175 51 173 65 177 74 180 76 183 94 189 96 190 104 187 106 187 113 180 113 179 111 175 112 174 116 172 117 173 121 169 126 167 126 167 129 155 128 154 132 156 135 168 133 173 134 180 139 191 139 197 142 200 147 206 147 211 144 223 144 224 151 227 154 227 160 223 167 224 171 214 183 201 184 197 181 192 165 185 158 183 158 181 160 181 169 190 169 190 174 186 177 185 182 187 197 182 203 181 214 171 224 166 226 162 225 162 228 159 231 156 231 155 229 151 228 149 224 147 224 142 228 142 237 135 237 134 235 131 235 129 238 125 238 124 236 117 235 118 226 116 226 116 224 114 224 107 215 104 215 95 227 91 227 86 221 83 220 83 215 80 214 79 210 80 207 72 201 74 196 82 194 80 189 70 191 67 196 63 196 61 193 56 192 55 196 51 198 33 198 25 195 24 192 22 192 18 187 17 183 15 183 12 179 16 168 18 167 18 162 22 157 20 151 21 145 26 139 34 138 34 136 44 134 50 130 69 132 70 135 68 136 70 137 78 135 72 133 68 129 70 127 77 128 74 125 74 121 68 117 69 112Z"/>
+    </clipPath>
+    <image href="img/flower-reference.png" width="692" height="1280" clip-path="url(#bloom-iris-edge)"/>
+  </svg>
+</div>
+<section class="section calendar-section">
+<h2>Дата свадьбы</h2>
+<div class="calendar">
+<div class="calendar-bows" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<h3>Февраль <small>/ 2027</small></h3>
+<div class="grid weekdays">
+<span>ПН</span>
+<span>ВТ</span>
+<span>СР</span>
+<span>ЧТ</span>
+<span>ПТ</span>
+<span>СБ</span>
+<span>ВС</span>
+</div>
+<div class="grid days" id="days"></div>
+<div class="calendar-note"><strong>27 февраля, суббота</strong><em>День нашей свадьбы</em></div>
+</div>
+<p class="eyebrow countdown-label">ДО НАШЕГО ДНЯ ОСТАЛОСЬ</p>
+<div class="countdown" id="countdown" aria-label="Обратный отсчёт до свадьбы">
+</div>
+</section>
+<div class="bloom bloom-blue" aria-hidden="true">
+  <svg viewBox="196 125 307 301" focusable="false">
+    <clipPath id="bloom-blue-edge">
+      <path d="M257 317 266 314 272 309 252 304 245 300 240 294 234 293 228 288 225 288 216 278 216 276 214 276 214 274 209 270 206 263 202 259 200 255 201 244 208 235 210 224 225 210 232 208 237 203 241 204 244 202 278 203 293 209 300 214 298 186 306 164 312 158 315 151 324 142 326 142 332 134 336 134 343 129 352 132 357 137 370 136 384 142 384 144 394 154 399 179 404 192 406 193 409 204 420 200 436 200 442 197 453 197 479 202 480 204 486 206 486 208 489 210 491 220 495 222 496 227 499 229 498 247 495 249 493 255 472 273 465 287 463 300 458 309 454 312 455 315 460 316 464 320 471 334 471 385 463 398 454 400 450 409 441 413 432 412 429 414 416 412 393 405 386 400 367 394 358 388 356 383 353 381 340 399 336 400 328 408 314 415 298 415 295 416 290 422 279 422 274 419 267 419 265 415 260 415 253 412 241 399 235 378 233 376 233 363 237 356 238 336 240 331 247 323 256 319Z"/>
+    </clipPath>
+    <image href="img/flower-reference.png" width="692" height="1280" clip-path="url(#bloom-blue-edge)"/>
+  </svg>
+</div>
+<section class="section location">
+<h2>Место проведения</h2>
+<div class="location-card">
+<div class="venue-photos">
+  <div class="venue-photo"><img src="img/venue-hall.webp" width="1620" height="2160" decoding="async" alt="Банкетный зал с накрытыми столами" loading="lazy"></div>
+</div>
+<h3>Банкетный зал «<span class="venue-name">Вавилон-Холл</span>»</h3>
+<p>г. Пенза, ул. Центральная, 18</p>
+<a class="button map-button" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D0%BD%D0%B7%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C%2018">Открыть на карте</a>
+</div>
+</section>
+<div class="bloom bloom-lily" aria-hidden="true">
+  <svg viewBox="187 477 344 301" focusable="false">
+    <clipPath id="bloom-lily-edge">
+      <path d="M282 538 291 539 314 554 314 535 320 506 325 500 330 489 338 481 343 481 349 488 367 491 373 494 381 502 385 511 388 513 392 529 399 543 401 560 412 550 426 544 444 542 454 545 463 555 467 567 474 572 474 574 483 577 486 582 475 592 460 592 453 599 453 601 444 610 435 615 434 618 446 622 448 625 466 633 490 649 498 657 498 659 500 659 502 664 506 666 515 675 515 677 519 679 519 681 527 686 527 699 519 708 517 708 517 710 507 714 506 716 502 716 497 719 478 720 431 711 414 702 400 690 401 718 394 749 386 764 378 772 370 775 364 775 354 769 342 770 340 772 332 772 330 769 326 753 321 686 292 698 262 704 231 704 217 700 204 700 197 698 191 688 192 673 198 657 208 643 238 619 254 610 280 603 291 603 284 578 280 573 273 571 268 567 261 566 252 561 246 561 242 566 242 574 240 579 232 578 228 572 229 562 234 558 238 558 241 551 248 543 265 537Z"/>
+    </clipPath>
+    <image href="img/flower-reference.png" width="692" height="1280" clip-path="url(#bloom-lily-edge)"/>
+  </svg>
+</div>
+<section class="section program" aria-labelledby="program-title">
+  <h2 id="program-title">План дня</h2>
+  <div class="timeline">
+    <svg class="timeline-thread" viewBox="0 0 400 575" preserveAspectRatio="none" aria-hidden="true">
+      <path id="day-thread" class="thread-progress" pathLength="1" d="M1 9C95 66 309 93 322 175C337 251 108 236 89 322C65 409 302 412 322 483C335 530 259 541 197 557"/>
+      <g class="thread-heart">
+        <path d="M0 11C-4 8-13 1-13-5C-13-12-4-14 0-7C4-14 13-12 13-5C13 1 4 8 0 11Z"/>
+        <animateMotion begin="indefinite" dur="2.8s" calcMode="paced" fill="freeze"><mpath href="#day-thread"/></animateMotion>
+      </g>
+    </svg>
+    <ol>
+      <li class="plan-welcome">
+        <svg class="plan-art" viewBox="0 0 120 132" aria-hidden="true">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 28Q35 23 57 31L48 63C45 73 37 80 29 78C19 76 16 68 16 57Z"/>
+            <path d="M66 30Q83 23 99 28L104 56C107 67 103 77 94 79C85 81 77 74 74 64Z"/>
+            <path d="M23 44Q37 42 52 47M71 46Q89 41 102 44M27 79L15 114M32 79L20 115M92 80L101 115M98 78L108 114"/>
+            <path d="M15 114Q3 113 4 119Q17 129 36 125Q44 121 22 116M101 114Q82 121 88 125Q104 129 119 120Q120 116 108 114"/>
+            <path d="M24 49Q19 64 26 71M48 52L43 66M76 48L80 65M97 50Q102 65 96 72M19 30L56 34M67 34L99 32"/>
+            <path d="M60 23L53 10M64 20L65 4M69 22L79 10M57 24L45 19M74 25L87 20"/>
+          </g>
+        </svg>
+        <div class="plan-copy"><span>Сбор гостей</span><time datetime="14:30">14:30</time></div>
+      </li>
+      <li class="plan-ceremony">
+        <svg class="plan-art" viewBox="0 0 140 100" aria-hidden="true">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="40" cy="59" rx="35" ry="21" transform="rotate(-13 40 59)"/>
+            <ellipse cx="40" cy="59" rx="30" ry="17" transform="rotate(-13 40 59)"/>
+            <ellipse cx="101" cy="70" rx="35" ry="21" transform="rotate(20 101 70)"/>
+            <ellipse cx="101" cy="70" rx="30" ry="17" transform="rotate(20 101 70)"/>
+            <path d="M36 33L41 26L53 25L63 31L57 40M42 28L51 34L53 26M52 34L61 31M57 17L49 5M63 14L61 2M70 16L75 5M75 21L86 14"/>
+          </g>
+        </svg>
+        <div class="plan-copy"><span>Церемония<br>заключения брака</span><time datetime="15:00">15:00</time></div>
+      </li>
+      <li class="plan-banquet">
+        <svg class="plan-art" viewBox="0 0 170 85" aria-hidden="true">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 63Q21 25 59 25T111 63M21 60Q30 31 59 30T104 60M27 59Q31 43 48 35M56 25V19Q50 15 55 9Q61 3 67 9Q72 15 66 19V25"/>
+            <path d="M9 63C38 58 84 60 114 63Q127 69 111 74C85 78 28 78 8 73Q-4 69 9 63ZM6 68Q62 76 116 67M112 71Q139 54 162 41"/>
+            <path d="M124 65Q117 54 126 44Q133 54 124 65M135 56Q128 43 137 34Q143 44 135 56M147 49Q145 40 164 36Q158 46 147 49M136 57Q144 53 155 62Q145 68 136 57M124 65Q134 62 142 73Q131 76 124 65"/>
+          </g>
+        </svg>
+        <div class="plan-copy"><span>Банкет</span><time datetime="16:00">16:00</time></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<div class="bloom bloom-pansy" aria-hidden="true">
+  <svg viewBox="452 710 224 241" focusable="false">
+    <clipPath id="bloom-pansy-edge">
+      <path d="M618 848 625 847 634 838 633 836 637 836 635 833 637 834 636 830 639 828 640 813 631 808 624 808 616 811 613 821 605 826 603 838 600 841 593 842 592 840 576 840 575 842 570 843 568 848 564 849 564 855 560 861 559 870 554 870 552 872 552 885 544 893 528 902 514 907 506 907 500 905 496 894 493 892 490 869 474 866 466 848 459 841 459 838 454 836 452 829 453 816 468 782 472 780 481 769 491 767 499 760 528 759 533 761 537 756 539 749 544 745 545 739 550 734 551 728 558 722 560 716 563 714 569 714 571 716 577 716 588 726 596 727 624 738 629 743 631 755 640 756 648 761 656 769 656 771 660 773 666 782 668 795 671 802 671 823 664 837 661 838 659 842 653 845 649 850 633 855 630 854 613 857 604 854 605 848Z"/>
+    </clipPath>
+    <image href="img/flower-reference.png" width="692" height="1280" clip-path="url(#bloom-pansy-edge)"/>
+  </svg>
+</div>
+<section class="section dress">
+
+<h2>Дресс-код</h2>
+<div class="swatches" role="group" aria-label="Шоколадный, синий, голубой и бежевый">
+  <i style="--swatch:#80563f"></i>
+  <i style="--swatch:#274963"></i>
+  <i style="--swatch:#92b5ce"></i>
+  <i style="--swatch:#d7c3a8"></i>
+</div>
+<p>Будем рады, если в своих образах вы поддержите цветовую гамму нашего праздника.</p>
+<div class="outfit-actions">
+  <button class="button" type="button" data-outfit="women" aria-haspopup="dialog" aria-controls="outfit-viewer"><span>Для дам</span></button>
+  <button class="button" type="button" data-outfit="men" aria-haspopup="dialog" aria-controls="outfit-viewer"><span>Для мужчин</span></button>
+</div>
+<dialog id="outfit-viewer" aria-labelledby="outfit-title">
+  <div class="outfit-header">
+    <h3 id="outfit-title"></h3>
+    <form method="dialog"><button class="button" aria-label="Закрыть подборку">Закрыть</button></form>
+  </div>
+  <div class="outfit-slice">
+    <img id="outfit-photo" data-src="img/dress-code-blue.webp" alt="" width="1122" height="1402">
+  </div>
+</dialog>
+</section>
+<section class="section wishes" aria-labelledby="wishes-title">
+  <h2 id="wishes-title">Пожелания</h2>
+  <p>Пусть этот вечер станет для вас небольшим поводом отложить повседневные заботы, нарядиться, отдохнуть и просто насладиться праздником. Мы будем рады видеть вас без маленьких спутников. Пожалуйста, оставьте малышей в надежных руках на вечер нашего торжества</p>
+<span class="wishes-flourish" aria-hidden="true"><i></i><b>✦</b><i></i></span>
+<p>Будем благодарны, если вместо традиционных подарков вы выберете вклад в наше семейное будущее</p>
+</section>
+<section class="section rsvp" aria-labelledby="rsvp-title">
+<div class="form-card">
+<header class="rsvp-header">
+<h2 id="rsvp-title">Анкета гостя</h2>
+<p>Пожалуйста, подтвердите своё присутствие<br>до <strong>1 февраля 2027 года</strong>.</p>
+</header>
+<form id="form">
+<label class="field">Имя и фамилия<input name="guest" required autocomplete="name" placeholder="Ваше имя и фамилия">
+</label>
+<fieldset>
+<legend>Сможете ли присутствовать?</legend>
+<label>
+<input type="radio" name="attend" value="yes" required> Да, смогу</label>
+<label>
+<input type="radio" name="attend" value="no"> Нет, не смогу</label>
+</fieldset>
+<div id="drinks" hidden>
+<fieldset>
+<legend>Какие напитки предпочитаете?</legend>
+<label>
+<input type="checkbox" name="drink" value="strong"> Крепкий алкоголь</label>
+<label><input type="checkbox" name="drink" value="white_dry"> Вино белое сухое</label>
+<label><input type="checkbox" name="drink" value="white_sweet"> Вино белое полусладкое</label>
+<label><input type="checkbox" name="drink" value="red_dry"> Вино красное сухое</label>
+<label><input type="checkbox" name="drink" value="red_sweet"> Вино красное полусладкое</label>
+</fieldset>
+</div>
+<button class="button submit" type="submit">Проверить ответ</button>
+<p class="demo">Демонстрационный режим: ответы никому не отправляются.</p>
+<p id="result" role="status">
+</p>
+</form>
+</div>
+</section>
+<section class="section contacts" id="contacts" hidden>
+<h2>Контакты</h2>
+<p id="contact-links">
+</p>
+</section>
+<div class="bloom bloom-azure" aria-hidden="true">
+  <svg viewBox="5 1045 222 219" focusable="false">
+    <clipPath id="bloom-azure-edge">
+      <path d="M80 1081 86 1073 90 1071 94 1064 105 1056 113 1053 132 1055 146 1061 147 1064 151 1066 160 1083 163 1083 167 1097 183 1096 193 1098 213 1107 220 1113 224 1123 224 1130 227 1133 227 1152 223 1161 220 1163 220 1165 218 1165 218 1167 216 1167 213 1173 204 1181 192 1187 192 1190 195 1192 197 1197 198 1223 195 1236 186 1252 177 1253 169 1258 141 1258 124 1252 116 1244 112 1243 110 1247 102 1252 92 1254 85 1258 73 1258 55 1254 39 1240 34 1230 32 1218 37 1199 37 1191 41 1187 26 1176 20 1165 19 1148 12 1133 12 1123 18 1119 18 1115 24 1107 34 1102 56 1097 74 1098 76 1087Z"/>
+    </clipPath>
+    <image href="img/flower-reference.png" width="692" height="1280" clip-path="url(#bloom-azure-edge)"/>
+  </svg>
+</div>
+<section class="section final">
+<span class="eyebrow">ДО СКОРОЙ ВСТРЕЧИ</span>
+<h2>Будем счастливы<br>
+<em>разделить этот день с вами</em>
+</h2>
+<div class="picture">
+<img class="flower final-flower" src="../assets/references/10_blue_flower_single_2.jpg" width="1165" height="1199" decoding="async" alt="" loading="lazy">
+<img src="../assets/references/08_final_illustration_for_end.jpg" width="1054" height="1492" decoding="async" alt="Иллюстрация пары с бокалами" loading="lazy">
+</div>
+<p class="signature">С любовью,<br>
+<em>Сергей и Наталья</em>
+</p>
+<span class="eyebrow">27 · 02 · 2027</span>
+</section>
+</main>
+<script type="module" src="rsvp-snow.js"></script>
+<script type="module" src="app.js?v=rsvp1"></script>
+</body>
+</html>
+

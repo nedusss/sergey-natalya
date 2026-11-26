@@ -138,7 +138,7 @@ const result = document.querySelector('#result');
 const guest = form.elements.guest;
 const submit = form.querySelector('button[type=submit]');
 const drinks = document.querySelector('#drinks');
-const drinkOptions = Array.from(form.querySelectorAll('[name=drink]'));
+const drinkOptions = drinks.querySelectorAll('input[type=checkbox]');
 const liveRsvp = Boolean(wedding.rsvpEndpoint);
 if (liveRsvp) {
   form.querySelector('.demo').hidden = true;

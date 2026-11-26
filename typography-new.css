@@ -181,3 +181,15 @@ body { background-attachment:scroll; }
 /* Keep observed content visible; let the photograph retain its intended crop. */
 .dress.seen .swatches i { animation:none; }
 .venue-photo img { height:auto; }
+
+@media (max-width: 699px) {
+  .hero-card {
+    min-height: 100vh;
+    min-height: 100dvh;
+    grid-template-rows: auto auto auto minmax(min-content, 1fr) auto;
+  }
+
+  .hero-line { height: clamp(30px, 8vw, 48px); }
+  .hero h2 { margin-top: clamp(18px, 8dvh, 60px); }
+}
+
